@@ -39,7 +39,7 @@ export function Greet() {
   const { connection } = useConnection();
   const [counter, setCounter] = useState(null);
 
-  const greet = useCallback(async (publicKey) => {
+  const greet = useCallback(async publicKey => {
     const recipient = new PublicKey(publicKey);
     const greetedPubkey = await PublicKey.createWithSeed(
       recipient,
@@ -76,7 +76,7 @@ export function Greet() {
       connection
     );
     await connection.confirmTransaction(signature, "processed");      
-  });
+  }, [connection, wallet]);
 
   const greetYourself = useCallback(async () => {
     await greet(wallet.publicKey.toBase58());

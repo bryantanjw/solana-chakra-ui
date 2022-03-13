@@ -28,8 +28,8 @@
     "react-app-rewired": "^2.2.1"
   },
   "scripts": {
-    "start": "node --max_old_space_size=2560 ./node_modules/.bin/react-app-rewired start",
-    "build": "node --max_old_space_size=2560 ./node_modules/.bin/react-app-rewired build",
+    "start": "node --max_old_space_size=4096 ./node_modules/.bin/react-app-rewired start",
+    "build": "node --max_old_space_size=4096 ./node_modules/.bin/react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject"
   },

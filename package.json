@@ -28,14 +28,10 @@
     "react-app-rewired": "^2.2.1"
   },
   "scripts": {
-    "start": "node --max_old_space_size=4096 ./node_modules/.bin/react-app-rewired start",
-    "build": "node --max_old_space_size=4096 ./node_modules/.bin/react-app-rewired build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-app-rewired eject"
-  },
-  "engines": {
-    "node": "12.10.0",
-    "npm": "6.0.0" 
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -51,5 +47,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engines": {
+    "node": "12.10.0"
   }
 }
